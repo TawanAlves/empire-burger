@@ -5,11 +5,24 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="estilos/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <script>
+      function myFunction() {
+   var x = document.getElementById("myTopnav");
+   if (x.className === "topnav") {
+     x.className += " responsive";
+   } else {
+     x.className = "topnav";
+   }
+}
+   </script>
+
    <title>Empire Burger</title>
 </head>
 <body>
    <header>
-      <nav>
+      <nav  class="topnav" id="myTopnav">
          <a href="#"><img src="assets/logo.png" alt="Empire Burger"></a>
          <div>
             <a href="#"> <p>Home</p> </a>
@@ -36,6 +49,25 @@
          <a href="#">Comprar Agora</a>
       </aside>
    </header>
+   <section class="servicos">
+      <div>
+         <aside class="svg"><img src="assets/icons/burger.svg" alt="hamburger"></aside>
+         <div class="txtservicos" style="border-right: 1px solid rgba(73, 46, 21, 0.15);">
+            <h3>ARTESANAL</h3>
+               <p>Nossas receitas são feitas com todo cuidado</p>
+         </div>
+         <aside class="svg"><img src="assets/icons/headset.svg" alt="fone"></aside>
+         <div class="txtservicos" style="border-right: 1px solid rgba(73, 46, 21, 0.15);">
+            <h3>ATENDIMENTO</h3>
+            <p>Totalmente personalizado</p>
+         </div >
+         <aside class="svg"><img src="assets/icons/delivery.svg" alt="delivery"></aside>
+         <div class="txtservicos">
+            <h3>DELIVERY SPEED</h3>
+            <p>Entregamos menos de 45 minutos</p>
+         </div>
+      </div>
+   </section>
    <h1>Empire Burger</h1>
 </body>
 </html>
